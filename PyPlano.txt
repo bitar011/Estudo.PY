@@ -1,0 +1,105 @@
+📅 Plano Intensivo – 45 Dias de Python
+Estrutura
+
+Microlearning (30–40 min/dia): leitura rápida + exemplos pequenos.
+Prática (1–2h/dia): exercícios e desafios de fixação.
+Projeto real (2x por semana, 2h): aplicar o que aprendeu em algo útil.
+Revisão estratégica (semanal): mapear pontos fracos e reforçar.
+Feedback: usar linters (flake8, pylint), testes automatizados, e checagem com soluções oficiais.
+################################################################################################
+🔹 Semana 1 (Dias 1–7) — Fundamentos sólidos
+
+Microlearning: sintaxe, variáveis, tipos de dados, input/output, operadores.
+
+Prática:
+-Exercícios básicos (calculadora, conversão de unidades).
+-Criar scripts simples que recebam dados do usuário.
+
+Projeto 1: mini "bloco de notas" em Python (salvar e ler texto de um arquivo).
+
+Revisão no dia 7: refazer exercícios sem olhar a resposta.
+###############################################################################################
+🔹 Semana 2 (Dias 8–14) — Estruturas e Funções
+
+Microlearning: listas, tuplas, dicionários, sets, loops, condicionais, funções.
+
+Prática:
+-Criar um sistema de cadastro simples (usuários ou produtos).
+-Exercícios de listas (ordenar, buscar, filtrar dados).
+
+Projeto 2: gerador de senhas aleatórias com personalização.
+
+Revisão no dia 14: refatorar o projeto da semana 1 usando funções.
+################################################################################################
+🔹 Semana 3 (Dias 15–21) — Módulos, Arquivos e Orientação a Objetos
+
+Microlearning:
+-Importação de módulos.
+-Leitura e escrita de arquivos (CSV, JSON).
+-Classes e objetos (atributos, métodos, herança).
+
+Prática:
+-Criar um "gerenciador de tarefas" (TO-DO list) com classes.
+-Manipular dados salvos em CSV/JSON.
+
+Projeto 3: sistema de biblioteca virtual (cadastrar livros, empréstimos, salvar em arquivo).
+
+Revisão no dia 21: refatorar código usando OOP.
+#################################################################################################
+🔹 Semana 4 (Dias 22–28) — Python Avançado e Automação
+
+Microlearning:
+-List/dict comprehension.
+-Funções lambda, map, filter, reduce.
+-Módulos úteis: datetime, os, shutil, random, itertools.
+
+Prática:
+-Automação de tarefas no PC (renomear arquivos, organizar pastas).
+-Exercícios com comprehension e lambdas.
+
+Projeto 4: script que organiza arquivos automaticamente em pastas por tipo/extensão.
+
+Revisão no dia 28: testar seus projetos com dados reais.
+################################################################################################
+🔹 Semana 5 (Dias 29–35) — Bibliotecas Populares e Análise de Dados
+
+Microlearning:
+-Numpy (arrays, operações matemáticas).
+-Pandas (DataFrames, leitura CSV/Excel, filtros, agrupamentos).
+-Matplotlib/Seaborn (gráficos).
+
+Prática:
+-Manipular planilhas de gastos pessoais.
+-Criar gráficos de despesas por categoria.
+-Projeto 5: dashboard simples de finanças pessoais (entrada de dados + visualização gráfica).
+
+Revisão no dia 35: reexplicar conceitos para si mesmo (técnica de Feynman).
+################################################################################################
+🔹 Semana 6 (Dias 36–42) — Web, APIs e Testes
+
+Microlearning:
+-requests (consumir APIs).
+-Flask (criar uma API simples).
+-Testes com pytest e boas práticas de código.
+
+Prática:
+-Criar um script que consulta a API de clima.
+-Implementar testes unitários básicos.
+
+Projeto 6: API REST simples de cadastro de usuários com Flask + JSON.
+
+Revisão no dia 42: rodar testes automatizados nos projetos anteriores.
+####################################################################################################
+🔹 Semana 7 (Dias 43–45) — Consolidação e Projeto Final
+
+Dias 43–44:
+
+Escolher um projeto final integrador (exemplos: sistema de estoque, jogo simples com Pygame, web scraper, dashboard interativo).
+Trabalhar nele aplicando tudo aprendido.
+
+Dia 45:
+
+Revisão geral.
+Documentar o projeto final (README, instruções de uso).
+
+Publicar no GitHub ou GitLab.

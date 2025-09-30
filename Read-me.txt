@@ -1,0 +1,2 @@
+Este é uma apresentação de estudo independente, para melhoramento da prática e entendimento dos assuntos.
+Focado em melhorar o entendimento e programação na linguagem Python, buscando melhor dominância na linguagem.
