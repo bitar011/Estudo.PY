@@ -66,7 +66,7 @@ def devolver_livro(titulo_busca):
             if livro["disponivel"] == False:
                 #Muda o status para True
                 livro["disponivel"] = True
-                print(f"O livro '{titulo_busca}' foi devolvido com sucesso! ⬅️")
+                print(f"O livro '{titulo_busca}' foi devolvido com sucesso!")
             else:
                 #Se 'disponivel' já era True
                 print(f"Opa, o livro '{titulo_busca}' já consta como disponível.")
@@ -78,9 +78,9 @@ def devolver_livro(titulo_busca):
 
 #Função para salvar os dados em um arquivo
 def salvar_dados():
-    # 1. Abrimos o arquivo em modo "w" (escrita)
+    #1. Abrimos o arquivo em modo "w" (escrita)
     with open("biblioteca.json", "w") as f:
-        # 2. Usamos json.dump para salvar nossa lista lá dentro
+        #2. Usamos json.dump para salvar nossa lista lá dentro
         json.dump(biblioteca, f, indent=4) 
         
     print("Dados salvos com sucesso em 'biblioteca.json'!")
@@ -93,7 +93,7 @@ def carregar_dados():
         with open("biblioteca.json", "r") as f:
             #Carrega os dados do arquivo para a variável
             biblioteca = json.load(f)
-        print("Dados carregados com sucesso! 📚")
+        print("Dados carregados com sucesso!")
     except FileNotFoundError:
         #Se o arquivo não existir, apenas avisamos.
         print("Arquivo 'biblioteca.json' não encontrado. Começando com uma biblioteca vazia.")
@@ -101,13 +101,51 @@ def carregar_dados():
         #Se o arquivo estiver vazio ou corrompido
         print("Erro ao ler o arquivo JSON. Começando com uma biblioteca vazia.")
 
+#Carrega dados alterados
+carregar_dados() 
+
 #Menu de interativdade com o usuário
 while True:
-    print("==== BIBLIOTECA VIRTUAL ====")
-    print("Digite '1' para cadastrar um livro.")
-    print("Digite '2' para listar livros da biblioteca.")
-    print("Digite '3' para pegar um livro emprestado.")
-    print("Digite '4' para devolver livro emprestado.")
+    print("\n==== BIBLIOTECA VIRTUAL ====")
+    print("1. Cadastrar Livro")
+    print("2. Listar Livros")
+    print("3. Emprestar Livro")
+    print("4. Devolver Livro")
+    print("5. Sair")
     print("==============================")
+    
+    try:
+        escolha = int(input("Digite sua escolha: "))
+    except ValueError:
+        print("\nErro: Por favor, digite apenas números.")
+        continue
 
-    escolha = int(input("Digite sua escolha: "))
+    #1. Cadastrar
+    if escolha == 1:
+        titulo = input("Digite o título: ")
+        autor = input("Digite o autor: ")
+        editora = input("Digite a editora: ")
+        cadastrar_livro(titulo, autor, editora)
+
+    #2. Listar
+    elif escolha == 2:
+        listar_livros()
+
+    #3. Emprestar
+    elif escolha == 3:
+        titulo_busca = input("Digite o título do livro para emprestar: ")
+        emprestar_livro(titulo_busca)
+
+    #4. Devolver
+    elif escolha == 4:
+        titulo_busca = input("Digite o título do livro para devolver: ")
+        devolver_livro(titulo_busca)
+
+    #5. Sair
+    elif escolha == 5:
+        print("\nObrigado por usar a biblioteca. Até logo!")
+        break #Quebra o loop
+
+    #Erro
+    else:
+        print("\nOpção inválida. Por favor, escolha um número de 1 a 5.")
